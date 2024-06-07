@@ -113,7 +113,7 @@ def loading_models():
 frames_a_concatener=[]
 d=dict()
 d_action=dict()
-def tracking1(video_path,model1):
+def tracking1(video_path):
     tracker,model = loading_models()
     deb=0
     target_size=""
