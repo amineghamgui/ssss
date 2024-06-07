@@ -108,4 +108,4 @@ if __name__ == "__main__":
         
     video_path = r"/kaggle/input/test-model-yowo-et-x3d/1.mp4"
 
-    tracking1(video_path,model1)
+    tracking1(video_path)
