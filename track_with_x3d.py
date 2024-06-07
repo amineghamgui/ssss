@@ -244,7 +244,7 @@ def tracking1(video_path):
                             else:
                                     start_time_x3d=time.time()
                                    
-                                    totalpred_withfps=prediction(model1,d[track_id])
+                                    totalpred_withfps=prediction(liste_frame=d[track_id])
                                     d_action[track_id]=totalpred_withfps[0]
                                     end_time_x3d=time.time()
                                     diffirence_time_x3d=end_time_x3d-start_time_x3d
