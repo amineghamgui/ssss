@@ -94,7 +94,7 @@ model1.to(device)
 # The duration of the input clip is also specific to the model.
 clip_duration = (transform_params["num_frames"] * transform_params["sampling_rate"])/frames_per_second
 
-def prediction(model, liste_frame):
+def prediction(model= model1, liste_frame):
     tensor_liste = [torch.from_numpy(arr) for arr in liste_frame]
     torch_tensor = torch.stack(tensor_liste)
     inputs=torch_tensor.permute(3, 0, 1, 2)
